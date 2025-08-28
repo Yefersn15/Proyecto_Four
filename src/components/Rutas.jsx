@@ -5,7 +5,7 @@ import Welcome from "./Welcome";
 
 const ProtectedRoute = ({ children }) => {
   const currentUser = JSON.parse(localStorage.getItem("currentUser") || "null");
-  return currentUser ? children : <Navigate to="/" replace />;
+  return currentUser ? children : <Navigate to="/Proyecto_Four/" replace />;
 };
 
 const Rutas = () => {

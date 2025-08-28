@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   const [userData, setUserData] = useState({
@@ -108,7 +109,7 @@ const Register = () => {
                 <button type="submit" className="btn btn-primary w-100">Registrar</button>
               </form>
               <p className="mt-3 text-center">
-                ¿Ya tienes una cuenta? <a href="/">Iniciar sesión</a>
+                ¿Ya tienes una cuenta? <Link to="/">Iniciar sesión</Link>
               </p>
             </div>
           </div>
