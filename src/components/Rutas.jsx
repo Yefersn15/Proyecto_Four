@@ -13,8 +13,7 @@ const Rutas = () => {
     <Routes>
       <Route path="/register" element={<Register />} />
       <Route path="/" element={<Login />} />
-      <Route 
-        path="/welcome" 
+      <Route path="/welcome" 
         element={
           <ProtectedRoute>
             <Welcome />
